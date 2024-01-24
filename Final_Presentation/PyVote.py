@@ -1,8 +1,8 @@
-from customtkinter import *               # A modern and customizable python UI-library based on Tkinter
+from customtkinter import *               # A modern and customizable Python UI-library based on Tkinter
 from PIL import Image                     # for image 
 from tkinter import messagebox            # to guide user's input (showing errors)
 import matplotlib.pyplot as plt           # for graphs
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg    # to place the graphs in to the tk window
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg    # to place the graphs into the tk window
 
 def change_mode():
     # changing the appearance_mode takes some time, so we added a loading effect
@@ -263,7 +263,7 @@ switch = CTkSwitch(window, command=change_mode, onvalue="on", offvalue="off", te
 switch.pack(anchor="e", padx=10, pady=5)
 
 ######################################################################################################################################
-# Frame 1 (Getting the position using ComboBox which would provide both of the property of OptionMenu and Entry)
+# Frame 1 (Getting the position using ComboBox which would provide both of the properties of OptionMenu and Entry)
 frame1 = CTkFrame(window, width=375, height=50) 
 frame1.pack(pady=5, padx=10, fill="x")
 
